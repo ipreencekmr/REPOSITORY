@@ -18,10 +18,10 @@
 		29123C11168EFCFE00100971 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29123C10168EFCFE00100971 /* Default-568h@2x.png */; };
 		29123C14168EFCFE00100971 /* HorizontalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29123C13168EFCFE00100971 /* HorizontalListViewController.m */; };
 		29123C17168EFCFE00100971 /* HorizontalListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29123C15168EFCFE00100971 /* HorizontalListViewController.xib */; };
-		9421AD9D16D609E7001D8F33 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9421AD9C16D609E7001D8F33 /* XMLReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9421ADA016D60EDC001D8F33 /* gArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9421AD9E16D60EDC001D8F33 /* gArrow.png */; };
 		9421ADA116D60EDC001D8F33 /* rArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9421AD9F16D60EDC001D8F33 /* rArrow.png */; };
 		9487CA3316D6426E005FEDDD /* StockTiker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9487CA3216D6426E005FEDDD /* StockTiker.m */; };
+		948F028516DCB409002A6795 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 948F028416DCB409002A6795 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,13 +41,13 @@
 		29123C12168EFCFE00100971 /* HorizontalListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalListViewController.h; sourceTree = "<group>"; };
 		29123C13168EFCFE00100971 /* HorizontalListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalListViewController.m; sourceTree = "<group>"; };
 		29123C16168EFCFE00100971 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HorizontalListViewController.xib; sourceTree = "<group>"; };
-		9421AD9B16D609E7001D8F33 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
-		9421AD9C16D609E7001D8F33 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		9421AD9E16D60EDC001D8F33 /* gArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gArrow.png; sourceTree = "<group>"; };
 		9421AD9F16D60EDC001D8F33 /* rArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rArrow.png; sourceTree = "<group>"; };
 		9487CA2F16D626F6005FEDDD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9487CA3116D6426E005FEDDD /* StockTiker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockTiker.h; sourceTree = "<group>"; };
 		9487CA3216D6426E005FEDDD /* StockTiker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockTiker.m; sourceTree = "<group>"; };
+		948F028316DCB409002A6795 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		948F028416DCB409002A6795 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +67,8 @@
 		29123BEB168EFCFD00100971 = {
 			isa = PBXGroup;
 			children = (
+				948F028316DCB409002A6795 /* JSONKit.h */,
+				948F028416DCB409002A6795 /* JSONKit.m */,
 				9487CA3116D6426E005FEDDD /* StockTiker.h */,
 				9487CA3216D6426E005FEDDD /* StockTiker.m */,
 				9487CA2F16D626F6005FEDDD /* QuartzCore.framework */,
@@ -99,8 +101,6 @@
 		29123C00168EFCFE00100971 /* HorizontalList */ = {
 			isa = PBXGroup;
 			children = (
-				9421AD9B16D609E7001D8F33 /* XMLReader.h */,
-				9421AD9C16D609E7001D8F33 /* XMLReader.m */,
 				29123C09168EFCFE00100971 /* HorizontalListAppDelegate.h */,
 				29123C0A168EFCFE00100971 /* HorizontalListAppDelegate.m */,
 				29123C12168EFCFE00100971 /* HorizontalListViewController.h */,
@@ -197,8 +197,8 @@
 				29123C07168EFCFE00100971 /* main.m in Sources */,
 				29123C0B168EFCFE00100971 /* HorizontalListAppDelegate.m in Sources */,
 				29123C14168EFCFE00100971 /* HorizontalListViewController.m in Sources */,
-				9421AD9D16D609E7001D8F33 /* XMLReader.m in Sources */,
 				9487CA3316D6426E005FEDDD /* StockTiker.m in Sources */,
+				948F028516DCB409002A6795 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

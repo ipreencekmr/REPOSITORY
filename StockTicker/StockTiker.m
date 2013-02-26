@@ -2,8 +2,8 @@
 //  StockTiker.m
 //  HorizontalList
 //
-//  Created by Prince Kumar Sharma on 21/02/13.
-//  Copyright (c) 2013 DaffodilAccount. All rights reserved.
+//  Created by Prince Kumar Sharma on 20/02/13.
+//  Copyright (c) 2012 Prince Kumar Sharma. All rights reserved.
 
 
 #import "StockTiker.h"
@@ -12,7 +12,6 @@
 @synthesize tdelegate=_tdelegate;
 @synthesize ttag=_ttag;
 
-static int count=0;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -33,12 +32,14 @@ static int count=0;
 
 -(void)start
 {
+   count=0;
    numberOfObjects=[_tdelegate numberOfRowsintickerView:self];
    NSLog(@"no of obejcts is %i",numberOfObjects);
- 
+    
     [NSTimer scheduledTimerWithTimeInterval:0.02 target:self selector:@selector(moveObjects) userInfo:nil repeats:YES];
     [NSTimer scheduledTimerWithTimeInterval:0.02 target:self selector:@selector(checkPosition) userInfo:nil repeats:YES];
 }
+
 
 -(void)addElement:(UIView*)subView
 {

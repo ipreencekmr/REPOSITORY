@@ -2,8 +2,8 @@
 //  StockTiker.h
 //  HorizontalList
 //
-//  Created by Prince Kumar Sharma on 21/02/13.
-//  Copyright (c) 2013 DaffodilAccount. All rights reserved.
+//  Created by Prince Kumar Sharma on 20/02/13.
+//  Copyright (c) 2012 Prince Kumar Sharma. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -17,15 +17,16 @@
 - (id)tickerView:(StockTiker*)tickerView cellForRowAtIndex:(int)index;
 @end
 
-
 @interface StockTiker : UIScrollView<UITableViewDataSource>
 {
     @private
+    int count;
     int numberOfObjects;
     id<UIStockTickerDelegate> tdelegate;
 }
 
 @property (assign) id<UIStockTickerDelegate>tdelegate;
 @property(assign)NSUInteger ttag;
+
 -(void)start;
 @end

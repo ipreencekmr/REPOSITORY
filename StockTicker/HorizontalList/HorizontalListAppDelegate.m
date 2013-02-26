@@ -2,8 +2,8 @@
 //  HorizontalListAppDelegate.m
 //  HorizontalList
 //
-//  Created by DaffodilAccount on 29/12/12.
-//  Copyright (c) 2012 DaffodilAccount. All rights reserved.
+//  Created by Prince Kumar Sharma on 20/02/13.
+//  Copyright (c) 2012 Prince Kumar Sharma. All rights reserved.
 //
 
 #import "HorizontalListAppDelegate.h"
